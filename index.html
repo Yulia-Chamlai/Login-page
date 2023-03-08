@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__img"></div>
+
+          <div class="main__content">
+            <p class="main-content__text">Welcome back</p>
+            <h1 class="main-content__title">Login to your account</h1>
+            <div class="main-content__form">
+              <form class="form" action="#">
+                <label class="form__email"
+                  >Email
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="John.snow@gmail.com"
+                  />
+                </label>
+                <label class="form__password"
+                  >Password
+                  <input
+                    type="password"
+                    name="Password"
+                    placeholder="*********"
+                  />
+                </label>
+
+                <div class="form__actions">
+                  <label>
+                    <input
+                      class="form__actions-remember"
+                      type="radio"
+                      name="radio"
+                    />Remember me
+                  </label>
+                  <label>
+                    <input
+                      class="form__actions-forgot"
+                      type="radio"
+                      name="radio"
+                    />Forgot password?
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            <button class="form__btn" type="submit">Login now</button>
+            <a class="form__link" href="#">Or sign-in with google</a>
+            <p class="form__join-text">
+              Don't have an account?
+              <a class="form__join-link" href="#">Join free today</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./scrypt.js"></script>
+  </body>
+</html>
